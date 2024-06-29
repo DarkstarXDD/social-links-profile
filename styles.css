@@ -6,3 +6,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .p-clamped {
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+  }
+}
