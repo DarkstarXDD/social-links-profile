@@ -7,6 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  *:focus-visible {
+    @apply outline-[0.125rem] outline-dotted outline-primary-400 outline-offset-[0.125rem];
+  }
+}
+
 @layer utilities {
   .p-clamped {
     padding: clamp(1.5rem, 5vw, 2.5rem);
